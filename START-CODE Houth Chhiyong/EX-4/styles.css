@@ -1,0 +1,150 @@
+body {
+    background-color: #ababb0;
+}
+.dashboard {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    height: 100%;
+    gap:10px;
+}
+
+.sidebar {
+    border-right: 1px solid ;
+    display: flex; 
+    flex-direction: column;
+    background-color: #6b6b6e;
+    border-radius: 1em;
+  }
+
+.sidebar-main{ 
+    padding: 0 20px 28px;
+    font-size: 2em;
+}
+  
+.nav-item {
+    display: flex; 
+    align-items:center; 
+    gap: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+
+.nav-item:hover { 
+    background: rgba(169, 167, 167, 0.05);
+    border-radius: 8px;
+}
+
+.nav-item.active { 
+    background: rgba(242, 242, 245, 0.15);
+    border-radius:8px;
+}
+
+
+.main { 
+    
+    display: flex; 
+    flex-direction: column; 
+    overflow: auto;
+}
+
+.topbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 32px;
+    background: #8282bc;
+    border-radius: 8px;
+
+
+  }
+.topbar h1 { 
+    font-size: 1.2em; 
+}
+
+.topbar-actions { 
+    display: flex; 
+    gap: 12px; 
+    align-items: center; 
+}
+
+.name { 
+    color: #fff;
+    background-color: #6b6b6e;
+    width: 38px; 
+    height: 38px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+    font-size: 0.9em; 
+}
+
+.content { 
+    padding: 28px 32px; 
+    flex: 1; 
+}
+
+.stats-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 16px; margin-bottom: 28px; 
+}
+
+.stat-card { 
+    border: 1px solid var(--border); 
+    border-radius: 12px; 
+    padding: 20px; 
+    background-color: rgb(155, 157, 151);
+}
+
+.stat-label { 
+    font-size: 0.8em;
+    margin-bottom: 10px; 
+    color:blue;
+}
+
+  .stat-value { 
+    font-size: 2em; 
+    margin-bottom: 6px; 
+}
+
+.table-card { 
+    background:rgb(196, 183, 183); 
+    border: 1px solid black; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    margin-bottom: 28px; 
+}
+  
+.table-header { 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    padding: 20px; 
+    border-bottom: 1px ;
+}
+
+table { 
+  width: 100%; 
+  border: 1px solid #121212;
+}
+
+thead th { 
+    padding: 12px 20px; 
+    text-align: left; 
+    font-size: 1em; 
+    text-transform: uppercase; 
+    border-bottom: 1px;
+    
+}
+
+tbody td { 
+    padding: 12px 20px; 
+    font-size: 0.9em; 
+    border-bottom: 1px;
+}
+
+tbody tr:hover { 
+    background: rgb(188, 184, 184); 
+}
+
